@@ -90,7 +90,7 @@ func getJokeData(baseAPI string) []byte {
 	}
 
 	request.Header.Add("Accept", "application/json")
-	request.Header.Add("User-Agent", "Dadjoke CLI (github.com/example/dadjoke)")
+	request.Header.Add("User-Agent", "Dadjoke CLI (github.com/spkane/dadjoke)")
 
 	response, err := http.DefaultClient.Do(request)
 	if err != nil {
